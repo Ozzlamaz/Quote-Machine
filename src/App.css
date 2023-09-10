@@ -26,6 +26,10 @@
   align-items: baseline;
 }
 
+#tweet-icon:hover {
+  transform: scale(1.2);
+}
+
 /* author */
 footer {
   margin-top: 30px;

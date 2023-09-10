@@ -75,9 +75,11 @@ const App = () => {
           <h2 style={{color: color}} className="colored text" id="text"><FaQuoteLeft /> {quote.text || 'No quotes for You'}</h2>
           <h4 style={{color: color}} className="colored text" id="author">-{quote.author || 'OzZy'}</h4>
           <div className="tweet-quote-wrapper">
-              <button><a id="tweet-quote" className="colored" href="twitter.com/intent/tweet" target="_blank">
-                  <BsTwitter />
-              </a></button>
+              <div >
+                <a id="tweet-quote" className="colored" href="twitter.com/intent/tweet" target="_blank">
+                  <BsTwitter id='tweet-icon' className='icon' />
+                </a>
+              </div>
               <button id="new-quote" className="colored" type="button" onClick={() => {getRandomQuote(quote.text); changeColor(color);fadeOut()}}>Next Quote</button>
           </div>
         </div>
